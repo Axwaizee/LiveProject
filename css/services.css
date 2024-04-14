@@ -1,0 +1,28 @@
+#services h1,
+#services h2,
+#services h3 {
+    color: var(--bee-infinity-theme-color);
+}
+
+#services {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    padding: 1rem;
+}
+
+#services p {
+    color: var(--bee-infinity-background-theme-color);
+    font-weight: 600;
+    font-size: 1.2rem;
+}
+
+.services-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    gap: 2rem;
+
+}

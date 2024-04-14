@@ -1,0 +1,72 @@
+.aboutus h2,
+.aboutus h3 {
+    color: var(--bee-infinity-theme-color);
+}
+
+.aboutus {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+    padding: 1rem;
+}
+
+.aboutus p {
+    color: var(--bee-infinity-background-theme-color);
+    font-weight: 600;
+    font-size: 1.2rem;
+}
+
+.company-info {
+    display: inherit;
+    flex-direction: inherit;
+    align-items: inherit;
+    justify-content: inherit;
+    gap: inherit;
+    padding: inherit;
+}
+.instructors-bios {
+    gap: 0;
+}
+.instructors-container {
+    display: flex;
+    gap: 5rem;
+    overflow-x: scroll;
+    width: 90vw;
+    height: 80vh;
+    scroll-snap-type: x mandatory;
+    padding: 5rem;
+    scrollbar-color: var(--bee-infinity-background-theme-color) var(--bee-infinity-theme-color);
+    outline: none;
+    scrollbar-width: thin;
+}
+
+
+.instructor {
+    min-width: 85vw;
+    border: 1px solid var(--bee-infinity-theme-color);
+    padding: 1rem;
+    border-radius: 5px;
+    scroll-snap-align: center;
+}
+
+.instructor img {
+    width: 20vw;
+    aspect-ratio: 3/4;
+    object-fit: cover;
+}
+.instructor h4 {
+    color: var(--bee-infinity-theme-color);
+    margin-bottom: 5px;
+}
+
+.gallery-images {
+    display: flex;
+    gap: 10px;
+}
+
+.gallery-images img {
+    max-width: 100%;
+    border-radius: 5px;
+}
