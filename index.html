@@ -34,6 +34,7 @@
     <link rel="stylesheet" href="css/aboutus.css">
     <link rel="stylesheet" href="css/gallery.css">
     <link rel="stylesheet" href="css/blog.css">
+    <link rel="stylesheet" href="css/faqs.css">
 
     <!-- website icon -->
 
@@ -63,7 +64,7 @@
                     <li><a href="#outteam">Our Team</a></li>
                     <li><a href="#gallery">Gallery</a></li>
                     <li><a href="#blog">Blog</a></li>
-                    <li><a href="#fAQs">FAQs</a></li>
+                    <li><a href="#faqs">FAQs</a></li>
                     <li><a href="#contactus">Contact Us</a></li>
                     <label for="check" class="close-menu"><i class="fas fa-times"></i></label>
                 </div>
@@ -326,6 +327,68 @@
         </section>
 
 
+
+        <section id="faqs">
+            <h2>FAQs</h2>
+            <div class="faqs-items-container">
+                <div class="faq-item" onclick="toggleAnswer(event)">
+                    <h3>What dance styles do you offer?</h3>
+                    <p class="answer">We offer classes in Bollywood and Hip Hop dance styles.</p>
+                </div>
+                <div class="faq-item" onclick="toggleAnswer(event)">
+                    <h3>How can I register for classes?</h3>
+                    <p class="answer">To register for classes, please fill out the registration form on our website or
+                        contact us directly.</p>
+                </div>
+                <div class="faq-item" onclick="toggleAnswer(event)">
+                    <h3>What are the payment options?</h3>
+                    <p class="answer">We accept payments through online transfer, credit/debit cards, and cash payments
+                        at our studio.</p>
+                </div>
+                <div class="faq-item">
+                    <h3 class="question">What are the age groups for your dance classes?</h3>
+                    <p class="answer">We offer dance classes for various age groups, including children, teenagers, and adults. Our classes are tailored to suit the specific needs and abilities of each age group.</p>
+                </div>
+                <div class="faq-item">
+                    <h3 class="question">Do I need any prior dance experience to join your classes?</h3>
+                    <p class="answer">No prior dance experience is necessary to join our classes. Whether you're a complete beginner or have some dance background, our instructors will guide you through the learning process at your own pace.</p>
+                </div>
+                <div class="faq-item">
+                    <h3 class="question">What should I wear to the dance classes?</h3>
+                    <p class="answer">We recommend wearing comfortable clothing that allows for ease of movement, such as leggings, t-shirts, or tank tops. For footwear, sneakers or dance shoes are suitable depending on the dance style.</p>
+                </div>
+                <div class="faq-item">
+                    <h3 class="question">Are there any performance opportunities for students?</h3>
+                    <p class="answer">Yes, we provide performance opportunities for our students throughout the year. These may include recitals, showcases, competitions, or community events where students can showcase their skills and talents.</p>
+                </div>
+            </div>
+
+            <!-- a JavaScript code to give the open and close effect of faqs -->
+
+            <script>
+                function toggleAnswer(event) {
+                    var question = event.target.closest('.faq-item');
+                    var answer = question.querySelector('.answer');
+
+                    if (answer.style.display === 'block') {
+                        answer.style.display = 'none';
+                        answer.classList.remove('expand');
+                        answer.classList.add('collapse');
+                    } else {
+                        var answers = document.querySelectorAll('.answer');
+                        answers.forEach(function (item) {
+                            item.style.display = 'none';
+                            item.classList.remove('expand');
+                            item.classList.add('collapse');
+                        });
+                        answer.style.display = 'block';
+                        answer.classList.remove('collapse');
+                        answer.classList.add('expand');
+                    }
+                }
+
+            </script>
+        </section>
 
 
 
