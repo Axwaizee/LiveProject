@@ -14,7 +14,6 @@
 
 .aboutus p {
     color: var(--body-text-color);
-    font-size: 1.2rem;
 }
 
 .company-info {
@@ -36,36 +35,31 @@
     height: 80vh;
     scroll-snap-type: x mandatory;
     padding: 5rem;
-    scrollbar-color: var(--bee-infinity-background-theme-color) var(--bee-infinity-theme-color);
+    scrollbar-color: var(--body-text-color) var(--body-background-color);
     outline: none;
     scrollbar-width: thin;
 }
 
 
 .instructor {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1.2em;
     min-width: 85vw;
-    border: 1px solid var(--bee-infinity-theme-color);
+    border: 1px solid var(--body-text-color);
     padding: 1rem;
     border-radius: 5px;
     scroll-snap-align: center;
+    overflow-y: auto;
 }
 
 .instructor img {
-    width: 20vw;
+    width: 12em;
     aspect-ratio: 3/4;
     object-fit: cover;
 }
 .instructor h4 {
     color: var(--body-text-color);
     margin-bottom: 5px;
-}
-
-.gallery-images {
-    display: flex;
-    gap: 10px;
-}
-
-.gallery-images img {
-    max-width: 100%;
-    border-radius: 5px;
 }
