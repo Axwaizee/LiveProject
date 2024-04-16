@@ -1,7 +1,7 @@
 .classes h1,
 .classes h2,
 .classes h3 {
-    color: var(--bee-infinity-theme-color);
+    color: var(--body-text-color);
 }
 
 .classes {
@@ -18,8 +18,7 @@
 }
 
 .classes p {
-    color: var(--bee-infinity-background-theme-color);
-    font-weight: 600;
+    color: var(--body-text-color);
     font-size: 1.2rem;
 }
 
