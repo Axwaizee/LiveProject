@@ -20,6 +20,7 @@
         crossorigin="anonymous" referrerpolicy="no-referrer" />
 
     <!-- cdn for font awesome icons -->
+
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
         integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
@@ -35,6 +36,7 @@
     <link rel="stylesheet" href="css/gallery.css">
     <link rel="stylesheet" href="css/blog.css">
     <link rel="stylesheet" href="css/faqs.css">
+    <link rel="stylesheet" href="css/contactus.css">
 
     <!-- website icon -->
 
@@ -345,21 +347,28 @@
                     <p class="answer">We accept payments through online transfer, credit/debit cards, and cash payments
                         at our studio.</p>
                 </div>
-                <div class="faq-item">
+                <div class="faq-item" onclick="toggleAnswer(event)">
                     <h3 class="question">What are the age groups for your dance classes?</h3>
-                    <p class="answer">We offer dance classes for various age groups, including children, teenagers, and adults. Our classes are tailored to suit the specific needs and abilities of each age group.</p>
+                    <p class="answer">We offer dance classes for various age groups, including children, teenagers, and
+                        adults. Our classes are tailored to suit the specific needs and abilities of each age group.</p>
                 </div>
-                <div class="faq-item">
+                <div class="faq-item" onclick="toggleAnswer(event)">
                     <h3 class="question">Do I need any prior dance experience to join your classes?</h3>
-                    <p class="answer">No prior dance experience is necessary to join our classes. Whether you're a complete beginner or have some dance background, our instructors will guide you through the learning process at your own pace.</p>
+                    <p class="answer">No prior dance experience is necessary to join our classes. Whether you're a
+                        complete beginner or have some dance background, our instructors will guide you through the
+                        learning process at your own pace.</p>
                 </div>
-                <div class="faq-item">
+                <div class="faq-item" onclick="toggleAnswer(event)">
                     <h3 class="question">What should I wear to the dance classes?</h3>
-                    <p class="answer">We recommend wearing comfortable clothing that allows for ease of movement, such as leggings, t-shirts, or tank tops. For footwear, sneakers or dance shoes are suitable depending on the dance style.</p>
+                    <p class="answer">We recommend wearing comfortable clothing that allows for ease of movement, such
+                        as leggings, t-shirts, or tank tops. For footwear, sneakers or dance shoes are suitable
+                        depending on the dance style.</p>
                 </div>
-                <div class="faq-item">
+                <div class="faq-item" onclick="toggleAnswer(event)">
                     <h3 class="question">Are there any performance opportunities for students?</h3>
-                    <p class="answer">Yes, we provide performance opportunities for our students throughout the year. These may include recitals, showcases, competitions, or community events where students can showcase their skills and talents.</p>
+                    <p class="answer">Yes, we provide performance opportunities for our students throughout the year.
+                        These may include recitals, showcases, competitions, or community events where students can
+                        showcase their skills and talents.</p>
                 </div>
             </div>
 
@@ -392,11 +401,35 @@
 
 
 
+        <section id="contactus">
+            <h2>Contact Us</h2>
+
+            <div class="contact-form">
+                <h3>Send us a Message</h3>
+                <form action="#" method="post">
+                    <input type="text" name="name" placeholder="Your Name" required>
+                    <input type="email" name="email" placeholder="Your Email" required>
+                    <textarea name="message" placeholder="Your Message" rows="5" required></textarea>
+                    <button type="submit">Send Message</button>
+                </form>
+            </div>
+
+            <div class="map">
+                <!-- Embed Google Maps or any other map service -->
+                <div class="mapouter">
+                    <div class="gmap_canvas"><iframe width="750" height="421" id="gmap_canvas"
+                            src="https://maps.google.com/maps?q=Bee+Infinity+Groups+Narayana+Nagar+2nd+Block%2C+Bangalore+City+Municipal+Corporation+Layout%2C+Bengaluru%2C+Thippasandra%2C+Karnataka+560062&t=k&z=13&ie=UTF8&iwloc=&output=embed"
+                            frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe>
+                    </div>
+                </div>
+            </div>
+        </section>
 
 
 
     </main>
 
+    
 
 </body>
 

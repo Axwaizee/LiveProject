@@ -37,8 +37,8 @@
     padding: 10px 20px;
     border-radius: inherit;
     text-decoration: none;
-    background-color: var(--body-text-color);
     outline: 1px solid var(--body-text-color);
+    background-color: var(--body-text-color);
     color: var(--body-background-color);
     transition: background-color 0.3s, color 0.3s;
 }
