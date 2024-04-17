@@ -24,9 +24,11 @@
     gap: inherit;
     padding: inherit;
 }
+
 .instructors-bios {
     gap: 0;
 }
+
 .instructors-container {
     display: flex;
     gap: 5rem;
@@ -59,6 +61,7 @@
     aspect-ratio: 3/4;
     object-fit: cover;
 }
+
 .instructor h4 {
     color: var(--body-text-color);
     margin-bottom: 5px;

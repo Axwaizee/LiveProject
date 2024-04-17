@@ -71,5 +71,4 @@ main section {
     position: relative;
     height: inherit;
     scroll-snap-align: start;
-    /* z-index: -1; */
 }
